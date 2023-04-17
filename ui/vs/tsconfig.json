@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "node",
+    "target": "ES2018",
+    "module": "esnext",
+    "lib": ["DOM", "ES2018"],
+    "esModuleInterop": true,
+    "isolatedModules": true
+  }
+}

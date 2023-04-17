@@ -1,30 +1,9 @@
 "use strict";
-var LiVs = (() => {
-  var __defProp = Object.defineProperty;
-  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-  var __getOwnPropNames = Object.getOwnPropertyNames;
-  var __hasOwnProp = Object.prototype.hasOwnProperty;
-  var __export = (target, all) => {
-    for (var name in all)
-      __defProp(target, name, { get: all[name], enumerable: true });
-  };
-  var __copyProps = (to, from, except, desc) => {
-    if (from && typeof from === "object" || typeof from === "function") {
-      for (let key of __getOwnPropNames(from))
-        if (!__hasOwnProp.call(to, key) && key !== except)
-          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
-    }
-    return to;
-  };
-  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-
+(() => {
   // src/main.ts
-  var main_exports = {};
-  __export(main_exports, {
-    default: () => boot
-  });
   function boot() {
-    console.log("here");
+    console.log("not");
   }
-  return __toCommonJS(main_exports);
+  window.LiVs = { boot };
 })();
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsiLi4vLi4vdWkvdnMvc3JjL21haW4udHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIGJvb3QoKSB7XG5cbiAgY29uc29sZS5sb2coJ25vdCcpXG59XG5cblxuKHdpbmRvdyBhcyBhbnkpLkxpVnMgPSB7IGJvb3QgfVxuIl0sCiAgIm1hcHBpbmdzIjogIjs7O0FBQWUsV0FBUixPQUF3QjtBQUU3QixZQUFRLElBQUksS0FBSztBQUFBLEVBQ25CO0FBR0EsRUFBQyxPQUFlLE9BQU8sRUFBRSxLQUFLOyIsCiAgIm5hbWVzIjogW10KfQo=

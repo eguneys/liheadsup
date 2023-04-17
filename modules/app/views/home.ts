@@ -50,6 +50,6 @@ export const home = () => layout(
   ], {
     moreJs: tags.frag([
       h.vsTag(),
-      h.embedJsUnsafeLoadThen(`LiHeadsup.boot()`)()
+      h.embedJsUnsafeLoadThen(`LiVs.boot()`)()
     ])
   })()

@@ -1,4 +1,7 @@
 export default function boot() {
 
-  console.log('here')
+  console.log('not')
 }
+
+
+(window as any).LiVs = { boot }

@@ -31,7 +31,6 @@ export async function app_start(port: string) {
   app.use('/assets', express.static(pathjoin(__dirname, '../public')))
 
   app.get('/', apiLimiter, (req, res) => {
-  const __dirname = dirname(fileURLToPath(import.meta.url))
     res.send(views.home())
   })
 

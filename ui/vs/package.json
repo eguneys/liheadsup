@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "esbuild ./src/main.ts --bundle --format=iife --global-name=LiVs --outfile=../../public/compiled/vs.js"
+    "compile": "esbuild ./src/main.ts --sourcemap=inline --target=es2018 --bundle --format=iife --outfile=../../public/compiled/vs.js",
+    "lint": "tsc --noEmit --watch"
   },
   "keywords": [],
   "author": "",
