@@ -1,0 +1,24 @@
+{
+  "name": "liheadsup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node ./dist/main.js\"",
+    "build": "tsc",
+    "lint:watch": "tsc --noEmit --watch",
+    "prod": "PORT=5678 NODE_ENV=production node ./dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@types/node": "^18.15.11",
+    "express": "^4.18.2"
+  }
+}
