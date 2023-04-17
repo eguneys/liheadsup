@@ -1,0 +1,9 @@
+{
+  "net": {
+    "project": "liheadsup",
+    "protocol": "http://",
+    "domain": "localhost:3000",
+    "prodDomain": "localhost:3000",
+    "minifiedAssets": false
+  }
+}

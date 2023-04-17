@@ -2,11 +2,13 @@
   "name": "liheadsup",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "tsc-watch --onSuccess \"node ./dist/main.js\"",
-    "build": "tsc",
+    "dev": "nodemon --watch modules --ext ts --exec \"pnpm run build && node ./dist/main.js\"",
+    "build": "esbuild modules/app/main.ts --platform=node --format=esm --bundle --outfile=dist/main.js --banner:js=\"import { createRequire } from 'module'; const require = createRequire(import.meta.url);\"",
     "lint:watch": "tsc --noEmit --watch",
+    "test": "vitest",
     "prod": "PORT=5678 NODE_ENV=production node ./dist/main.js"
   },
   "keywords": [],
@@ -14,11 +16,16 @@
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.17",
-    "tsc-watch": "^6.0.0",
-    "typescript": "^5.0.4"
+    "@types/supertest": "^2.0.12",
+    "esbuild": "^0.17.17",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3",
+    "typescript": "^5.0.4",
+    "vitest": "^0.30.1"
   },
   "dependencies": {
     "@types/node": "^18.15.11",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0"
   }
 }

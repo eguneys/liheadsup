@@ -1,0 +1,16 @@
+{
+  "name": "vs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "esbuild ./src/main.ts --bundle --format=iife --global-name=LiVs --outfile=../../public/compiled/vs.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.17.17",
+    "typescript": "^5.0.4"
+  }
+}
